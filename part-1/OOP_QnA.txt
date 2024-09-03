@@ -1,0 +1,31 @@
+**************1st 1:30 min**************
+1.What is class in Javascript?
+
+2.What is object in Javascript?
+
+3.What is OOP & Why use OOP?
+
+4.What is :
+a.abstraction 
+b.encapsulations
+c.inheritance 
+d.polymorphism
+?
+
+5.nheritance=is A relationship?
+
+6.nheritance=is A relationship
+
+7.What is aggregation & what is composition in Has a Relationship???
+
+8.Agregiation vs composition???
+
+9.What is complie time & run time in polymorphism?
+
+10.What is constructor overloading,operator overloading in polymorphism
+
+11.What is function overloading & function overriding?
+
+12.What is virtual function in Run time polymorphism?
+
+
