@@ -311,3 +311,100 @@ person7.name = function() {
   };
   console.log(person7)
   console.log("x father is " + person7.name())
+
+class Sum{
+  // console.log("hi")
+  // let x = 5
+  constructor(){
+    console.log("hello")
+  }
+  sum(){
+    let x = 5;
+    let y = 22
+    let z = x + y
+    console.log(z)
+  }
+}
+const sum1 = new Sum()
+sum1.sum()
+
+class Student{
+  constructor(name,roll,age,department,session){
+    this.name = name
+    this.roll =roll
+    this.age=age
+    this.department = department
+    this.session = session
+    console.log(`hello ${this.name}`)
+  }
+  details(){
+    const stdInfo = `I am ${this.name}.My age is ${this.age}.My dept is ${this.department} & session : ${this.session}`
+    console.log(stdInfo)
+  }
+}
+
+const std1 = new Student("sohel",0902117,34,"EEE",'2009-2010')
+std1.details()
+const std2 = new Student("Faisal",0902003,33,"EEE",'2009-2010')
+std2.details()
+
+const teacher = {
+  name :"Towhidul Alam",
+  dept:"Biology",
+  teacherInfo : ()=>{
+    return `${this.name} sir is a good teacher.He is expert in ${this.dept}`
+  },
+  teacherInfo2 : function() {
+    return `${this.name} sir is a good teacher.He is expert in ${this.dept}`
+  }
+}
+console.log(teacher.teacherInfo())
+console.log(teacher.teacherInfo2())
+
+
+/*
+Some solutions to display JavaScript objects are:
+
+Displaying the Object Properties by name
+Displaying the Object Properties in a Loop
+Displaying the Object using Object.values()
+Displaying the Object using JSON.stringify()
+
+*/
+// Create an Object
+const person8 = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+console.log(person8.name + ", " + person8.age + ", " + person8.city)
+
+let text = "";
+for (let x in person8) {
+  text += person8[x] + " ";
+};
+console.log(text)
+
+/*
+You must use person[x] in the loop.
+person.x will not work (Because x is the loop variable).
+*/
+
+// Using Object.values()
+// Object.values() creates an array from the property values:
+console.log(Object.values(person8))
+console.log(Object.keys(person8))
+
+const fruits = {Bananas:300, Oranges:200, Apples:500}; 
+
+let text2 = "";
+for (let [fruit, amount] of Object.entries(fruits)) {
+  text2 += fruit + ": " + amount + ",";
+}
+console.log(text2)
+
+// Stringify Object
+let myString = JSON.stringify(person);
+console.log(myString)
+
+//https://www.w3schools.com/js/js_object_constructors.asp
