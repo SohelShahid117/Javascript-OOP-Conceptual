@@ -1,7 +1,7 @@
 **************1st 1:30 min**************
-1.What is class in Javascript?
+1.What is class in Javascript?--->done
 
-2.What is object in Javascript?
+2.What is object in Javascript?--->done
 
 3.What is OOP & Why use OOP?
 

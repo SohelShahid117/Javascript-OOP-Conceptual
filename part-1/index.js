@@ -408,3 +408,51 @@ let myString = JSON.stringify(person);
 console.log(myString)
 
 //https://www.w3schools.com/js/js_object_constructors.asp
+
+/*
+Object Constructor Functions
+Sometimes we need to create many objects of the same type.
+
+To create an object type we use an object constructor function.
+It is considered good practice to name constructor functions with an upper-case first letter.
+*/
+
+function Father(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+const myFather = new Father("John", "Doe", 50, "blue");
+console.log("My father is " + myFather.age + "." + "eye color is " + myFather.eyeColor)
+
+
+function Person9(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "English";
+}
+
+const myFather2 = new Person9("John", "Doe", 50, "blue");
+const myMother2 = new Person9("Sally", "Rally", 48, "green");
+
+console.log("My father is " + myFather2.nationality + ". My mother is " + myMother2.nationality)
+
+myFather2.language = "Bangla";
+console.log(myFather2)
+
+// Will Not Work
+Person9.profession = "Farmer";
+console.log("The nationality of my father is " + myFather2.profession)
+
+myFather2.profession = "Farmer";
+console.log("The nationality of my father is " + myFather2.profession)
+
+Person9.prototype.enjoyDress = "panjabi";
+console.log("enjoy dress of my father is " + myFather2.enjoyDress)
+
+//start from Constructor Function Methods
+//https://www.w3schools.com/js/js_object_constructors.asp
